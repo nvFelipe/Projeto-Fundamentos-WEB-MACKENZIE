@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <title>Acessibilidade na WEB</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+  </head>
+  <div class="div">
+    <header>
+      <h1>Acessibilidade na WEB</h1>
+    </header>
+
+    <nav>
+      <hr />
+      <b>
+        <ul class="nav">
+          <li class="nav"><a href="homepage.html">HOME</a></li>
+          <li class="nav"><a href="pagina_do_video.html">VIDEO</a></li>
+          <li class="nav"><a href="formulario.HTML">CONTATO</a></li>
+        </ul>
+      </b>
+      <hr />
+    </nav>
+
+    <body>
+      <form name="cadastro" method="post">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Formulario para preenchimento</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Insira seu nome</td>
+              <td><input type="texto" /></td>
+            </tr>
+
+            <tr>
+              <td>Sexo</td>
+              <td>
+                <input list="sexo" />
+                <datalist id="sexo">
+                  <option value="Masculino"></option>
+                  <option value="Feminino"></option>
+                  <option value="Outros"></option>
+                </datalist>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Idade</td>
+              <td><input type="number" min="0" max="150" /></td>
+            </tr>
+            <tr>
+              <td>data de nascimento</td>
+              <td><input type="date" /></td>
+            </tr>
+
+            <tr>
+              <td>E-mail</td>
+              <td>
+                <input type="email" placeholder="seuemail@email.com.br" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>cargo</td>
+              <td>
+                <input type="radio" name="cargo" value="aluno" /> Aluno
+                <input type="radio" name="cargo" value="professor" /> Professor
+              </td>
+            </tr>
+            <tr>
+              <td class="direita"><input type="submit" /></td>
+              <td><input type="reset" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </body>
+    <footer><hr>
+      <script src="scripts.js"></script>  
+    </footer>
+  </div>
+
+</html>

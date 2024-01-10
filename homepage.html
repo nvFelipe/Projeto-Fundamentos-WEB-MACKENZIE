@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Acessibilidade na WEB</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <script>
+            function exibirSaudacao() {
+              var nome = "Felipe da Silva Neves";
+              var linha2 = "São Paulo / ADS- Mackenzie";
+              
+              var dataatual = new Date();
+              var hora = dataatual.getHours();
+              var saudacao = "";
+              
+              if (hora >= 6 && hora < 12) {
+                saudacao = "Bom dia!";
+              } else if (hora >= 12 && hora < 18) {
+                saudacao = "Boa tarde!";
+              } else {
+                saudacao = "Boa noite!";
+              }
+        
+              var diaSemana = dataatual.toLocaleDateString('pt-BR', { weekday: 'long' });
+        
+              var mensagem =  "Sou o " + nome + "\n" +
+                              linha2 + "\n" +
+                              saudacao + " Hoje é " + diaSemana + ".\n\n" ;
+        
+              alert(mensagem);
+            }
+          </script>
+        
+    </head>
+
+    <div class="div">
+        <header>
+            <h1>Acessibilidade na WEB</h1>
+        </header>
+
+        <nav>
+            <hr />
+            <ul class="nav">
+                <li class="nav"><a href="homepage.html">HOME</a></li>
+                <li class="nav"><a href="pagina_do_video.html">VIDEO</a></li>
+                <li class="nav"><a href="formulario.HTML">CONTATO</a></li>
+            </ul>
+            <hr />
+        </nav>
+
+        <body onload="exibirSaudacao()">
+
+            
+            <h3>O que é acessibilidade na WEB?</h3>
+
+            <p>
+                Quando falamos em acessibilidade na WEB podemos defini-la como um
+                conjunto de boas práticas que auxiliam a quebrar barreiras nos ambientes
+                virtuais.<br />
+                Tornar uma página acessível é permitir que diferentes tipos de pessoas,
+                com deficiência ou não, possam chegar aos conteúdos e compreendê-los com
+                autonomia.<br />
+            </p>
+
+            <h3>Para que serve a acessibilidade WEB</h3>
+
+            <p>
+                Muito mais do que ter um design bonito e atraente, os sites precisam
+                atender a todos, quando uma página não está acessível, ela está fechando
+                as portas para milhões de pessoas, indo contra o seu propósito que é
+                atrair mais visitantes.
+            </p>
+
+            <p>
+                Não pensar em acessibilidade é sinônimo de, além de ter menos acessos,
+                não fornecer a informação aos visitantes. Vale reforçar que hoje em dia
+                já existem recursos que permitem criar sites bonitos, funcionais e
+                acessíveis ao mesmo tempo.<br />
+                Além do mais, a acessibilidade pode melhorar o rankeamento da sua página
+                no Google, uma vez que o algoritmo do buscador reconhece essas práticas
+                e o enxerga com maior relevância.
+            </p>
+
+            <h3>Exemplos de acessibilidade WEB</h3>
+            <ul>
+                <li>
+                    Não usar apenas cores para destacar alguma informação. Isso ajuda
+                    pessoas com daltonismo, por exemplo
+                </li>
+                <li>
+                    Usar tags corretas para auxiliar a leitura do site por um programa de
+                    leitura de telas
+                </li>
+                <li>
+                    Fazer descrições alternativas das imagens pode auxiliar os leitores de
+                    página à descreve-las
+                </li>
+            </ul>
+
+            <p>
+                Acesse o <a href="pagina_do_video.html">línk do vídeo</a> para mais
+                informações de uma forma mais acessível<br />
+            </p>
+
+            <h3>Alguns exemplos sobre acessibilidade na WEB</h3>
+
+            <h4>Cores para daltônicos</h4>
+            <figure>
+                <img class="img" src="Paleta de cores daltonismo.gif"
+                    alt="imagem animada mostrando variação de cores que pode ser distinguida por daltonicos" />
+            </figure>
+            <p>
+                Podemos utilizar as variações de cores acima para incluir daltônicos em
+                algum destaque do site
+            </p>
+            Voce tambem pode consultar paletas de cores acessiveis na ferramenta
+            <a href="https://colorbrewer2.org/#type=diverging&scheme=Spectral&n=5">ColorBrewer</a>
+
+            <h4>Descrições de imagens</h4>
+            <figure>
+                <img class="img" src="cachorro.jpg"
+                    alt="Cachorro branco e marrom em cima de um sofá segurando uma cenoura de pelúcia" />
+            </figure>
+            <p>
+                Cachorro branco e marrom em cima de um sofá segurando uma cenoura de
+                pelúcia<br />
+            </p>
+            <p>
+                Descrição de imagens são importantes para que o aplicativo de leittor de
+                pagina possa detalhar a imagem para o utilizador
+            </p>
+            <br />
+
+            <p>
+                Você também pode encontrar mais dicas de boas praticas em acessibilidade
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Accessibility/HTML">aqui.</a>
+            </p>
+        </body>
+        <footer><hr>
+            <script src="scripts.js"></script>            
+        </footer>
+    </div>
+
+</html>

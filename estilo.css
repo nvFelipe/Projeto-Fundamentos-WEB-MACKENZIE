@@ -1,0 +1,79 @@
+.centro {
+  text-align: center;
+}
+.direita {
+  position: relative;
+  float: right;
+}
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.video {
+  width: 100%;
+}
+footer{
+  font-weight: bold;
+  text-align: right;
+}
+tbody {
+  text-align: left;
+  display:block;
+}
+html {
+  padding-top: 3%;
+  padding-right: 3%;
+  padding-bottom: 0px;
+  padding-left: 10%;
+  background-image: url(backgroud.png);
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  margin-left: 13%;
+}
+
+a:hover {
+  text-decoration: none;
+  background: #5758588c;
+  padding: 5%;
+}
+
+header {
+  text-align: center;
+}
+h1 {
+  font-family: garamond;
+}
+
+p {
+  text-align: justify;
+}
+.div {
+  position: relative;
+  background-color: lightgray;
+  border: 0px;
+  padding: 1%;
+  width: 90%;
+  height: relative;
+  box-shadow: 0 1px 1em #000;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: block;
+    text-align: center;
+    margin-left: 0%;
+    padding: 0%;
+  }
+  html {
+    padding-left: 3%;
+  }
+  .div {
+    margin-left: 5%;
+  }
+}
